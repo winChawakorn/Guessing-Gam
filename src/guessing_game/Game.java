@@ -45,6 +45,7 @@ public class Game {
 	 * @return Is the user's answer is true?
 	 */
 	public boolean guess(int number) {
+		count++;
 		if (number == ans) {
 			setHint(String.format("Right. The secret is %d", ans));
 			return true;
@@ -98,14 +99,14 @@ public class Game {
 	/**
 	 * Return hint of that round
 	 * 
-	 * @return hint
+	 * @return value of hint
 	 */
 	public String getHint() {
 		return hint;
 	}
 
 	/**
-	 * set hint
+	 * Use to set value of hint.
 	 * 
 	 * @param hint
 	 *            is the hint for guessing
@@ -114,11 +115,13 @@ public class Game {
 		this.hint = hint;
 	}
 
+	/**
+	 * Return value of count in that time
+	 * 
+	 * @return value of count
+	 */
 	public int getCount() {
 		return count;
 	}
 
-	public void setCount() {
-		count++;
-	}
 }

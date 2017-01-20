@@ -25,7 +25,6 @@ public class GameConsole {
 		while (true) {
 			System.out.print("What is your guess? ");
 			int num = sc.nextInt();
-			game.setCount();
 			game.guess(num);
 			System.out.println(game.getHint());
 			if (num == game.getAns()) {
