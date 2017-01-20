@@ -18,6 +18,8 @@ public class GameConsole {
 	 *            is the Game object that we start by this class.
 	 */
 	public void play(Game game) {
+		System.out.println("Guessing Game");
+		System.out.println("Your guess?");
 		System.out.printf("I'm thinking of a number between 1 and %d\n",
 				game.getUpperbound());
 		while (true) {
