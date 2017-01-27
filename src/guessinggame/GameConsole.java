@@ -1,9 +1,9 @@
-package guessing_game;
+package guessinggame;
 
 import java.util.Scanner;
 
 /**
- * Game console for guessing_game
+ * Game console for guessinggame
  * 
  * @author Chawakorn Suphepre
  *
