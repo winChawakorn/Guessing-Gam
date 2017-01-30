@@ -6,6 +6,7 @@ import java.util.Random;
  * Game of guessing a secet number.
  * 
  * @author Chawakorn Suphepre
+ * @version 2017.01.30
  */
 public class Game {
 	private int upperbound;

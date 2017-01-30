@@ -6,7 +6,7 @@ import java.util.Scanner;
  * Game console for guessing_game
  * 
  * @author Chawakorn Suphepre
- *
+ * @version 2017.01.30
  */
 public class GameConsole {
 	private Scanner sc = new Scanner(System.in);

@@ -1,5 +1,10 @@
 package guessinggame;
 
+/**
+ * 
+ * @author Chawakorn Suphepre
+ * @version 2017.01.30
+ */
 public class Main {
 
 	/** create object and start the game */
