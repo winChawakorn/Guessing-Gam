@@ -3,7 +3,7 @@ package guessinggame;
 import java.util.Scanner;
 
 /**
- * Game console for guessinggame
+ * Game console for guessing_game
  * 
  * @author Chawakorn Suphepre
  *
@@ -17,9 +17,8 @@ public class GameConsole {
 	 * @param game
 	 *            is the Game object that we start by this class.
 	 */
-	public void play(Game game) {
+	public int play(Game game) {
 		System.out.println("Guessing Game");
-		System.out.println("Your guess?");
 		System.out.printf("I'm thinking of a number between 1 and %d\n",
 				game.getUpperbound());
 		while (true) {
@@ -28,9 +27,12 @@ public class GameConsole {
 			game.guess(num);
 			System.out.println(game.getHint());
 			if (num == game.getAns()) {
-				System.out.printf("Correct. You used %d guesses.",
-						game.getCount());
-				return;
+				if (game.getCount() == 1) {
+					System.out.printf("You used %d guess.", game.getCount());
+				} else {
+					System.out.printf("You used %d guesses.", game.getCount());
+				}
+				return game.getAns();
 			}
 		}
 	}

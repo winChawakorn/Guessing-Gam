@@ -47,7 +47,7 @@ public class Game {
 	public boolean guess(int number) {
 		count++;
 		if (number == ans) {
-			setHint(String.format("Right. The secret is %d", ans));
+			setHint(String.format("Right. The secret is %d.", ans));
 			return true;
 		} else if (number > ans) {
 			setHint("Sorry, your guess is too large.");
@@ -92,7 +92,7 @@ public class Game {
 	 * @param ans
 	 *            is answer of this game.
 	 */
-	public void setAns(int ans) {
+	protected void setAns(int ans) {
 		this.ans = ans;
 	}
 
