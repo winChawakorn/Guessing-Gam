@@ -3,7 +3,7 @@ package guessinggame;
 import java.util.Random;
 
 /**
- * Game of guessing a secet number.
+ * Game of guessing a secret number.
  * 
  * @author Chawakorn Suphepre
  * @version 2017.01.30
